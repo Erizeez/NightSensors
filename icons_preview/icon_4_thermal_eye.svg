@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05030A"/>
+      <stop offset="50%" stop-color="#110724"/>
+      <stop offset="100%" stop-color="#080214"/>
+    </linearGradient>
+    <radialGradient id="thermalRadial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="20%" stop-color="#FFDD00"/>
+      <stop offset="45%" stop-color="#FF5400"/>
+      <stop offset="70%" stop-color="#7209B7"/>
+      <stop offset="90%" stop-color="#3A0CA3"/>
+      <stop offset="100%" stop-color="#03071E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4CC9F0"/>
+      <stop offset="35%" stop-color="#F72585"/>
+      <stop offset="70%" stop-color="#FFDD00"/>
+      <stop offset="100%" stop-color="#4CC9F0"/>
+    </linearGradient>
+    <filter id="glow4" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg4)"/>
+
+  <!-- 仿生机械复眼外圈光阑 -->
+  <circle cx="512" cy="512" r="410" fill="none" stroke="#7209B7" stroke-opacity="0.35" stroke-width="3"/>
+  <circle cx="512" cy="512" r="360" fill="none" stroke="url(#ringGrad4)" stroke-width="6" stroke-dasharray="120 18" filter="url(#glow4)"/>
+
+  <!-- 热成像等温阶梯云团 -->
+  <circle cx="512" cy="512" r="280" fill="url(#thermalRadial)"/>
+
+  <!-- 机械瞳孔光圈叶片 (Aperture Iris) -->
+  <g stroke="#05030A" stroke-width="5" fill="none">
+    <path d="M 512 292 C 592 362 672 442 732 512"/>
+    <path d="M 732 512 C 672 592 592 672 512 732"/>
+    <path d="M 512 732 C 432 672 352 592 292 512"/>
+    <path d="M 292 512 C 352 432 432 362 512 292"/>
+  </g>
+
+  <!-- 空间深度内视镜瞳孔 -->
+  <circle cx="512" cy="512" r="130" fill="#0A0417" stroke="#FFDD00" stroke-width="4" filter="url(#glow4)"/>
+  
+  <!-- 瞳孔内部激光测距三维十字架 -->
+  <line x1="512" y1="412" x2="512" y2="612" stroke="#FFDD00" stroke-width="3"/>
+  <line x1="412" y1="512" x2="612" y2="512" stroke="#FFDD00" stroke-width="3"/>
+  <circle cx="512" cy="512" r="40" fill="none" stroke="#FF5400" stroke-width="3" stroke-dasharray="8 6"/>
+  <circle cx="512" cy="512" r="14" fill="#FFFFFF" filter="url(#glow4)"/>
+</svg>

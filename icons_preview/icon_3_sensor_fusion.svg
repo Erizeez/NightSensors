@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070B"/>
+      <stop offset="50%" stop-color="#0F141C"/>
+      <stop offset="100%" stop-color="#06090E"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="blueLaser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="60%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <radialGradient id="sphereCore" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#93C5FD"/>
+      <stop offset="70%" stop-color="#1E40AF"/>
+      <stop offset="100%" stop-color="#0B132B"/>
+    </radialGradient>
+    <filter id="glow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg3)"/>
+
+  <!-- 精密外标刻度圆盘 -->
+  <circle cx="512" cy="512" r="410" fill="none" stroke="#2563EB" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="512" cy="512" r="390" fill="none" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="4" stroke-dasharray="4 28"/>
+
+  <!-- 陀螺仪空间万向节轨道 1 (俯仰环 45度倾斜) -->
+  <ellipse cx="512" cy="512" rx="360" ry="140" fill="none" stroke="url(#goldGrad)" stroke-width="8" transform="rotate(-30 512 512)" filter="url(#glow3)"/>
+
+  <!-- 陀螺仪空间万向节轨道 2 (横滚环 60度交叉) -->
+  <ellipse cx="512" cy="512" rx="360" ry="140" fill="none" stroke="url(#blueLaser)" stroke-width="8" transform="rotate(45 512 512)" filter="url(#glow3)"/>
+
+  <!-- 万向节支点精密卡扣 -->
+  <circle cx="210" cy="336" r="14" fill="#FFE066" filter="url(#glow3)"/>
+  <circle cx="814" cy="688" r="14" fill="#FFE066" filter="url(#glow3)"/>
+  <circle cx="270" cy="750" r="14" fill="#60A5FA" filter="url(#glow3)"/>
+  <circle cx="754" cy="274" r="14" fill="#60A5FA" filter="url(#glow3)"/>
+
+  <!-- 中心悬浮空间感知量子核心球体 -->
+  <circle cx="512" cy="512" r="110" fill="url(#sphereCore)" filter="url(#glow3)"/>
+
+  <!-- 核心球体内部几何透镜光环 -->
+  <ellipse cx="512" cy="512" rx="85" ry="30" fill="none" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="3" transform="rotate(-15 512 512)"/>
+  
+  <!-- 空间轴向光束 (X, Y, Z 重力锁定) -->
+  <line x1="512" y1="360" x2="512" y2="664" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="6 6"/>
+  <circle cx="512" cy="512" r="16" fill="#FFFFFF"/>
+</svg>

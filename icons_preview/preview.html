@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NightSensors App Icons 预览展厅</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background: #0B0E14;
+      color: #E2E8F0;
+      padding: 40px 24px;
+      min-height: 100vh;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .title {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #38BDF8 0%, #818CF8 50%, #C084FC 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #94A3B8;
+      max-width: 680px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 32px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #151B26;
+      border: 1px solid #1E293B;
+      border-radius: 24px;
+      padding: 28px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #38BDF8;
+      box-shadow: 0 20px 40px -15px rgba(56, 189, 248, 0.25);
+    }
+    .icon-wrapper {
+      position: relative;
+      margin-bottom: 24px;
+    }
+    /* iOS 连续曲率圆角 (Continuous Corner / Squircle) */
+    .icon-preview {
+      width: 220px;
+      height: 220px;
+      border-radius: 49.5px; /* iOS 1024x1024 对应 22.5% 圆角 */
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+      transition: transform 0.2s;
+    }
+    .icon-preview:hover {
+      transform: scale(1.03);
+    }
+    .icon-preview svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .sizes-preview {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+      padding: 12px 18px;
+      background: #0B0E14;
+      border-radius: 16px;
+    }
+    .mini-icon {
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    .size-64 {
+      width: 64px;
+      height: 64px;
+      border-radius: 14.4px;
+    }
+    .size-44 {
+      width: 44px;
+      height: 44px;
+      border-radius: 9.9px;
+    }
+    .size-28 {
+      width: 28px;
+      height: 28px;
+      border-radius: 6.3px;
+    }
+    .mini-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+    .card-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #F8FAFC;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: #94A3B8;
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 20px;
+      min-height: 40px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+    .btn {
+      flex: 1;
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: #38BDF8;
+      color: #0F172A;
+      border: none;
+    }
+    .btn-primary:hover {
+      background: #7DD3FC;
+    }
+    .btn-secondary {
+      background: transparent;
+      color: #CBD5E1;
+      border: 1px solid #334155;
+    }
+    .btn-secondary:hover {
+      background: #1E293B;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="title">NightSensors App 图标设计方案</div>
+    <div class="subtitle">专为 iPhone Pro LiDAR 激光雷达 + TrueDepth 原深感点阵融合设计 · 5 套高质感矢量图标 · 支持原生 iOS 连续圆角预览</div>
+  </div>
+
+  <div class="grid">
+    <!-- 方案 1 -->
+    <div class="card">
+      <div class="icon-wrapper">
+        <div class="icon-preview">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04080F"/>
+      <stop offset="50%" stop-color="#0B132B"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FF87" stop-opacity="0.35"/>
+      <stop offset="45%" stop-color="#00FF87" stop-opacity="0.12"/>
+      <stop offset="70%" stop-color="#60EFFF" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#00FF87" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="centerCore" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#80FFDB"/>
+      <stop offset="70%" stop-color="#00FF87"/>
+      <stop offset="100%" stop-color="#00B4D8"/>
+    </radialGradient>
+    <linearGradient id="beamGrad" x1="50%" y1="50%" x2="90%" y2="15%">
+      <stop offset="0%" stop-color="#00FF87" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00FF87" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景底板 -->
+  <rect width="1024" height="1024" fill="url(#bg1)"/>
+  
+  <!-- 微光背景扫描辐射 -->
+  <circle cx="512" cy="512" r="440" fill="url(#radarGlow)"/>
+
+  <!-- 同心刻度环 -->
+  <circle cx="512" cy="512" r="380" fill="none" stroke="#00FF87" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="8 12"/>
+  <circle cx="512" cy="512" r="290" fill="none" stroke="#00FF87" stroke-opacity="0.3" stroke-width="3"/>
+  <circle cx="512" cy="512" r="190" fill="none" stroke="#60EFFF" stroke-opacity="0.45" stroke-width="3" stroke-dasharray="16 8"/>
+  <circle cx="512" cy="512" r="100" fill="none" stroke="#00FF87" stroke-opacity="0.6" stroke-width="4"/>
+
+  <!-- 360 度战术十字测距轴线 -->
+  <line x1="512" y1="92" x2="512" y2="432" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+  <line x1="512" y1="592" x2="512" y2="932" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+  <line x1="92" y1="512" x2="432" y2="512" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+  <line x1="592" y1="512" x2="932" y2="512" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+
+  <!-- 战术四角测距标尺 -->
+  <path d="M 232 282 L 232 232 L 282 232" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 792 282 L 792 232 L 742 232" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 232 742 L 232 792 L 282 792" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 792 742 L 792 792 L 742 792" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 雷达扫描扇区光束 -->
+  <path d="M 512 512 L 840 260 A 420 420 0 0 0 512 92 Z" fill="url(#beamGrad)" opacity="0.45"/>
+
+  <!-- LiDAR 探测点阵与光点 (代表点云) -->
+  <circle cx="680" cy="340" r="7" fill="#00FF87" filter="url(#glow1)"/>
+  <circle cx="360" cy="410" r="5" fill="#60EFFF" filter="url(#glow1)"/>
+  <circle cx="620" cy="670" r="6" fill="#00FF87" filter="url(#glow1)"/>
+  <circle cx="430" cy="620" r="5" fill="#80FFDB" filter="url(#glow1)"/>
+  <circle cx="730" cy="560" r="4" fill="#00FF87"/>
+
+  <!-- 中央高聚能红外发射核 -->
+  <circle cx="512" cy="512" r="38" fill="url(#centerCore)" filter="url(#glow1)"/>
+  <circle cx="512" cy="512" r="16" fill="#FFFFFF"/>
+</svg>
+        </div>
+      </div>
+      <div class="sizes-preview">
+        <div class="mini-icon size-64"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04080F"/>
+      <stop offset="50%" stop-color="#0B132B"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FF87" stop-opacity="0.35"/>
+      <stop offset="45%" stop-color="#00FF87" stop-opacity="0.12"/>
+      <stop offset="70%" stop-color="#60EFFF" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#00FF87" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="centerCore" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#80FFDB"/>
+      <stop offset="70%" stop-color="#00FF87"/>
+      <stop offset="100%" stop-color="#00B4D8"/>
+    </radialGradient>
+    <linearGradient id="beamGrad" x1="50%" y1="50%" x2="90%" y2="15%">
+      <stop offset="0%" stop-color="#00FF87" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00FF87" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景底板 -->
+  <rect width="1024" height="1024" fill="url(#bg1)"/>
+  
+  <!-- 微光背景扫描辐射 -->
+  <circle cx="512" cy="512" r="440" fill="url(#radarGlow)"/>
+
+  <!-- 同心刻度环 -->
+  <circle cx="512" cy="512" r="380" fill="none" stroke="#00FF87" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="8 12"/>
+  <circle cx="512" cy="512" r="290" fill="none" stroke="#00FF87" stroke-opacity="0.3" stroke-width="3"/>
+  <circle cx="512" cy="512" r="190" fill="none" stroke="#60EFFF" stroke-opacity="0.45" stroke-width="3" stroke-dasharray="16 8"/>
+  <circle cx="512" cy="512" r="100" fill="none" stroke="#00FF87" stroke-opacity="0.6" stroke-width="4"/>
+
+  <!-- 360 度战术十字测距轴线 -->
+  <line x1="512" y1="92" x2="512" y2="432" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+  <line x1="512" y1="592" x2="512" y2="932" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+  <line x1="92" y1="512" x2="432" y2="512" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+  <line x1="592" y1="512" x2="932" y2="512" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+
+  <!-- 战术四角测距标尺 -->
+  <path d="M 232 282 L 232 232 L 282 232" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 792 282 L 792 232 L 742 232" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 232 742 L 232 792 L 282 792" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 792 742 L 792 792 L 742 792" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 雷达扫描扇区光束 -->
+  <path d="M 512 512 L 840 260 A 420 420 0 0 0 512 92 Z" fill="url(#beamGrad)" opacity="0.45"/>
+
+  <!-- LiDAR 探测点阵与光点 (代表点云) -->
+  <circle cx="680" cy="340" r="7" fill="#00FF87" filter="url(#glow1)"/>
+  <circle cx="360" cy="410" r="5" fill="#60EFFF" filter="url(#glow1)"/>
+  <circle cx="620" cy="670" r="6" fill="#00FF87" filter="url(#glow1)"/>
+  <circle cx="430" cy="620" r="5" fill="#80FFDB" filter="url(#glow1)"/>
+  <circle cx="730" cy="560" r="4" fill="#00FF87"/>
+
+  <!-- 中央高聚能红外发射核 -->
+  <circle cx="512" cy="512" r="38" fill="url(#centerCore)" filter="url(#glow1)"/>
+  <circle cx="512" cy="512" r="16" fill="#FFFFFF"/>
+</svg></div>
+        <div class="mini-icon size-44"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04080F"/>
+      <stop offset="50%" stop-color="#0B132B"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FF87" stop-opacity="0.35"/>
+      <stop offset="45%" stop-color="#00FF87" stop-opacity="0.12"/>
+      <stop offset="70%" stop-color="#60EFFF" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#00FF87" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="centerCore" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#80FFDB"/>
+      <stop offset="70%" stop-color="#00FF87"/>
+      <stop offset="100%" stop-color="#00B4D8"/>
+    </radialGradient>
+    <linearGradient id="beamGrad" x1="50%" y1="50%" x2="90%" y2="15%">
+      <stop offset="0%" stop-color="#00FF87" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00FF87" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景底板 -->
+  <rect width="1024" height="1024" fill="url(#bg1)"/>
+  
+  <!-- 微光背景扫描辐射 -->
+  <circle cx="512" cy="512" r="440" fill="url(#radarGlow)"/>
+
+  <!-- 同心刻度环 -->
+  <circle cx="512" cy="512" r="380" fill="none" stroke="#00FF87" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="8 12"/>
+  <circle cx="512" cy="512" r="290" fill="none" stroke="#00FF87" stroke-opacity="0.3" stroke-width="3"/>
+  <circle cx="512" cy="512" r="190" fill="none" stroke="#60EFFF" stroke-opacity="0.45" stroke-width="3" stroke-dasharray="16 8"/>
+  <circle cx="512" cy="512" r="100" fill="none" stroke="#00FF87" stroke-opacity="0.6" stroke-width="4"/>
+
+  <!-- 360 度战术十字测距轴线 -->
+  <line x1="512" y1="92" x2="512" y2="432" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+  <line x1="512" y1="592" x2="512" y2="932" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+  <line x1="92" y1="512" x2="432" y2="512" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+  <line x1="592" y1="512" x2="932" y2="512" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+
+  <!-- 战术四角测距标尺 -->
+  <path d="M 232 282 L 232 232 L 282 232" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 792 282 L 792 232 L 742 232" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 232 742 L 232 792 L 282 792" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 792 742 L 792 792 L 742 792" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 雷达扫描扇区光束 -->
+  <path d="M 512 512 L 840 260 A 420 420 0 0 0 512 92 Z" fill="url(#beamGrad)" opacity="0.45"/>
+
+  <!-- LiDAR 探测点阵与光点 (代表点云) -->
+  <circle cx="680" cy="340" r="7" fill="#00FF87" filter="url(#glow1)"/>
+  <circle cx="360" cy="410" r="5" fill="#60EFFF" filter="url(#glow1)"/>
+  <circle cx="620" cy="670" r="6" fill="#00FF87" filter="url(#glow1)"/>
+  <circle cx="430" cy="620" r="5" fill="#80FFDB" filter="url(#glow1)"/>
+  <circle cx="730" cy="560" r="4" fill="#00FF87"/>
+
+  <!-- 中央高聚能红外发射核 -->
+  <circle cx="512" cy="512" r="38" fill="url(#centerCore)" filter="url(#glow1)"/>
+  <circle cx="512" cy="512" r="16" fill="#FFFFFF"/>
+</svg></div>
+        <div class="mini-icon size-28"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04080F"/>
+      <stop offset="50%" stop-color="#0B132B"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FF87" stop-opacity="0.35"/>
+      <stop offset="45%" stop-color="#00FF87" stop-opacity="0.12"/>
+      <stop offset="70%" stop-color="#60EFFF" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#00FF87" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="centerCore" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#80FFDB"/>
+      <stop offset="70%" stop-color="#00FF87"/>
+      <stop offset="100%" stop-color="#00B4D8"/>
+    </radialGradient>
+    <linearGradient id="beamGrad" x1="50%" y1="50%" x2="90%" y2="15%">
+      <stop offset="0%" stop-color="#00FF87" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00FF87" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景底板 -->
+  <rect width="1024" height="1024" fill="url(#bg1)"/>
+  
+  <!-- 微光背景扫描辐射 -->
+  <circle cx="512" cy="512" r="440" fill="url(#radarGlow)"/>
+
+  <!-- 同心刻度环 -->
+  <circle cx="512" cy="512" r="380" fill="none" stroke="#00FF87" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="8 12"/>
+  <circle cx="512" cy="512" r="290" fill="none" stroke="#00FF87" stroke-opacity="0.3" stroke-width="3"/>
+  <circle cx="512" cy="512" r="190" fill="none" stroke="#60EFFF" stroke-opacity="0.45" stroke-width="3" stroke-dasharray="16 8"/>
+  <circle cx="512" cy="512" r="100" fill="none" stroke="#00FF87" stroke-opacity="0.6" stroke-width="4"/>
+
+  <!-- 360 度战术十字测距轴线 -->
+  <line x1="512" y1="92" x2="512" y2="432" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+  <line x1="512" y1="592" x2="512" y2="932" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+  <line x1="92" y1="512" x2="432" y2="512" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+  <line x1="592" y1="512" x2="932" y2="512" stroke="#00FF87" stroke-opacity="0.4" stroke-width="3"/>
+
+  <!-- 战术四角测距标尺 -->
+  <path d="M 232 282 L 232 232 L 282 232" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 792 282 L 792 232 L 742 232" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 232 742 L 232 792 L 282 792" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 792 742 L 792 792 L 742 792" fill="none" stroke="#00FF87" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 雷达扫描扇区光束 -->
+  <path d="M 512 512 L 840 260 A 420 420 0 0 0 512 92 Z" fill="url(#beamGrad)" opacity="0.45"/>
+
+  <!-- LiDAR 探测点阵与光点 (代表点云) -->
+  <circle cx="680" cy="340" r="7" fill="#00FF87" filter="url(#glow1)"/>
+  <circle cx="360" cy="410" r="5" fill="#60EFFF" filter="url(#glow1)"/>
+  <circle cx="620" cy="670" r="6" fill="#00FF87" filter="url(#glow1)"/>
+  <circle cx="430" cy="620" r="5" fill="#80FFDB" filter="url(#glow1)"/>
+  <circle cx="730" cy="560" r="4" fill="#00FF87"/>
+
+  <!-- 中央高聚能红外发射核 -->
+  <circle cx="512" cy="512" r="38" fill="url(#centerCore)" filter="url(#glow1)"/>
+  <circle cx="512" cy="512" r="16" fill="#FFFFFF"/>
+</svg></div>
+      </div>
+      <div class="card-title">1. LiDAR 激光脉冲与战术夜视</div>
+      <div class="card-desc">军规级深黑钛金属基底，微光荧光绿雷达扫描波纹，高聚能红外激光发射核心与点云采样光点。</div>
+      <div class="btn-group">
+        <a href="icon_1_lidar_pulse.svg" download class="btn btn-primary">下载 SVG</a>
+        <a href="icon_1_lidar_pulse.svg" target="_blank" class="btn btn-secondary">独立查看</a>
+      </div>
+    </div>
+
+    <!-- 方案 2 -->
+    <div class="card">
+      <div class="icon-wrapper">
+        <div class="icon-preview">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090014"/>
+      <stop offset="50%" stop-color="#14012B"/>
+      <stop offset="100%" stop-color="#05000A"/>
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="50%" stop-color="#4FACFE"/>
+      <stop offset="100%" stop-color="#FA709A"/>
+    </linearGradient>
+    <linearGradient id="meshGrad" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#F72585" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7209B7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4CC9F0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg2)"/>
+
+  <!-- 3D 空间网格透视地平线 (Mesh Terrain) -->
+  <g stroke="#F72585" stroke-opacity="0.4" stroke-width="2">
+    <!-- 纵向透视线收敛到中心消失点 -->
+    <line x1="512" y1="512" x2="60" y2="980"/>
+    <line x1="512" y1="512" x2="220" y2="980"/>
+    <line x1="512" y1="512" x2="380" y2="980"/>
+    <line x1="512" y1="512" x2="512" y2="980"/>
+    <line x1="512" y1="512" x2="644" y2="980"/>
+    <line x1="512" y1="512" x2="804" y2="980"/>
+    <line x1="512" y1="512" x2="964" y2="980"/>
+
+    <!-- 横向等高线 (间距随透视放大) -->
+    <line x1="432" y1="550" x2="592" y2="550"/>
+    <line x1="372" y1="600" x2="652" y2="600"/>
+    <line x1="292" y1="670" x2="732" y2="670"/>
+    <line x1="192" y1="760" x2="832" y2="760"/>
+    <line x1="82" y1="880" x2="942" y2="880" stroke-width="3" stroke="#4CC9F0" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- 顶部赛博朋克空间几何多面体 (Sensory Prism) -->
+  <g filter="url(#glow2)">
+    <!-- 外围等边感知六边形 -->
+    <polygon points="512,180 772,330 772,630 512,780 252,630 252,330" fill="none" stroke="url(#cyanPurple)" stroke-width="6"/>
+    
+    <!-- 内部空间坐标连接棱线 -->
+    <line x1="512" y1="180" x2="512" y2="512" stroke="#00F2FE" stroke-width="4"/>
+    <line x1="772" y1="330" x2="512" y2="512" stroke="#FA709A" stroke-width="4"/>
+    <line x1="772" y1="630" x2="512" y2="512" stroke="#7209B7" stroke-width="4"/>
+    <line x1="512" y1="780" x2="512" y2="512" stroke="#00F2FE" stroke-width="4"/>
+    <line x1="252" y1="630" x2="512" y2="512" stroke="#FA709A" stroke-width="4"/>
+    <line x1="252" y1="330" x2="512" y2="512" stroke="#7209B7" stroke-width="4"/>
+  </g>
+
+  <!-- 顶点感知粒子点云 -->
+  <circle cx="512" cy="180" r="10" fill="#00F2FE" filter="url(#glow2)"/>
+  <circle cx="772" cy="330" r="10" fill="#FA709A" filter="url(#glow2)"/>
+  <circle cx="772" cy="630" r="10" fill="#4CC9F0" filter="url(#glow2)"/>
+  <circle cx="512" cy="780" r="10" fill="#00F2FE" filter="url(#glow2)"/>
+  <circle cx="252" cy="630" r="10" fill="#FA709A" filter="url(#glow2)"/>
+  <circle cx="252" cy="330" r="10" fill="#4CC9F0" filter="url(#glow2)"/>
+
+  <!-- 中心核心能量珠 -->
+  <circle cx="512" cy="512" r="32" fill="#FFFFFF" filter="url(#glow2)"/>
+  <circle cx="512" cy="512" r="18" fill="#00F2FE"/>
+</svg>
+        </div>
+      </div>
+      <div class="sizes-preview">
+        <div class="mini-icon size-64"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090014"/>
+      <stop offset="50%" stop-color="#14012B"/>
+      <stop offset="100%" stop-color="#05000A"/>
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="50%" stop-color="#4FACFE"/>
+      <stop offset="100%" stop-color="#FA709A"/>
+    </linearGradient>
+    <linearGradient id="meshGrad" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#F72585" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7209B7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4CC9F0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg2)"/>
+
+  <!-- 3D 空间网格透视地平线 (Mesh Terrain) -->
+  <g stroke="#F72585" stroke-opacity="0.4" stroke-width="2">
+    <!-- 纵向透视线收敛到中心消失点 -->
+    <line x1="512" y1="512" x2="60" y2="980"/>
+    <line x1="512" y1="512" x2="220" y2="980"/>
+    <line x1="512" y1="512" x2="380" y2="980"/>
+    <line x1="512" y1="512" x2="512" y2="980"/>
+    <line x1="512" y1="512" x2="644" y2="980"/>
+    <line x1="512" y1="512" x2="804" y2="980"/>
+    <line x1="512" y1="512" x2="964" y2="980"/>
+
+    <!-- 横向等高线 (间距随透视放大) -->
+    <line x1="432" y1="550" x2="592" y2="550"/>
+    <line x1="372" y1="600" x2="652" y2="600"/>
+    <line x1="292" y1="670" x2="732" y2="670"/>
+    <line x1="192" y1="760" x2="832" y2="760"/>
+    <line x1="82" y1="880" x2="942" y2="880" stroke-width="3" stroke="#4CC9F0" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- 顶部赛博朋克空间几何多面体 (Sensory Prism) -->
+  <g filter="url(#glow2)">
+    <!-- 外围等边感知六边形 -->
+    <polygon points="512,180 772,330 772,630 512,780 252,630 252,330" fill="none" stroke="url(#cyanPurple)" stroke-width="6"/>
+    
+    <!-- 内部空间坐标连接棱线 -->
+    <line x1="512" y1="180" x2="512" y2="512" stroke="#00F2FE" stroke-width="4"/>
+    <line x1="772" y1="330" x2="512" y2="512" stroke="#FA709A" stroke-width="4"/>
+    <line x1="772" y1="630" x2="512" y2="512" stroke="#7209B7" stroke-width="4"/>
+    <line x1="512" y1="780" x2="512" y2="512" stroke="#00F2FE" stroke-width="4"/>
+    <line x1="252" y1="630" x2="512" y2="512" stroke="#FA709A" stroke-width="4"/>
+    <line x1="252" y1="330" x2="512" y2="512" stroke="#7209B7" stroke-width="4"/>
+  </g>
+
+  <!-- 顶点感知粒子点云 -->
+  <circle cx="512" cy="180" r="10" fill="#00F2FE" filter="url(#glow2)"/>
+  <circle cx="772" cy="330" r="10" fill="#FA709A" filter="url(#glow2)"/>
+  <circle cx="772" cy="630" r="10" fill="#4CC9F0" filter="url(#glow2)"/>
+  <circle cx="512" cy="780" r="10" fill="#00F2FE" filter="url(#glow2)"/>
+  <circle cx="252" cy="630" r="10" fill="#FA709A" filter="url(#glow2)"/>
+  <circle cx="252" cy="330" r="10" fill="#4CC9F0" filter="url(#glow2)"/>
+
+  <!-- 中心核心能量珠 -->
+  <circle cx="512" cy="512" r="32" fill="#FFFFFF" filter="url(#glow2)"/>
+  <circle cx="512" cy="512" r="18" fill="#00F2FE"/>
+</svg></div>
+        <div class="mini-icon size-44"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090014"/>
+      <stop offset="50%" stop-color="#14012B"/>
+      <stop offset="100%" stop-color="#05000A"/>
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="50%" stop-color="#4FACFE"/>
+      <stop offset="100%" stop-color="#FA709A"/>
+    </linearGradient>
+    <linearGradient id="meshGrad" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#F72585" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7209B7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4CC9F0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg2)"/>
+
+  <!-- 3D 空间网格透视地平线 (Mesh Terrain) -->
+  <g stroke="#F72585" stroke-opacity="0.4" stroke-width="2">
+    <!-- 纵向透视线收敛到中心消失点 -->
+    <line x1="512" y1="512" x2="60" y2="980"/>
+    <line x1="512" y1="512" x2="220" y2="980"/>
+    <line x1="512" y1="512" x2="380" y2="980"/>
+    <line x1="512" y1="512" x2="512" y2="980"/>
+    <line x1="512" y1="512" x2="644" y2="980"/>
+    <line x1="512" y1="512" x2="804" y2="980"/>
+    <line x1="512" y1="512" x2="964" y2="980"/>
+
+    <!-- 横向等高线 (间距随透视放大) -->
+    <line x1="432" y1="550" x2="592" y2="550"/>
+    <line x1="372" y1="600" x2="652" y2="600"/>
+    <line x1="292" y1="670" x2="732" y2="670"/>
+    <line x1="192" y1="760" x2="832" y2="760"/>
+    <line x1="82" y1="880" x2="942" y2="880" stroke-width="3" stroke="#4CC9F0" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- 顶部赛博朋克空间几何多面体 (Sensory Prism) -->
+  <g filter="url(#glow2)">
+    <!-- 外围等边感知六边形 -->
+    <polygon points="512,180 772,330 772,630 512,780 252,630 252,330" fill="none" stroke="url(#cyanPurple)" stroke-width="6"/>
+    
+    <!-- 内部空间坐标连接棱线 -->
+    <line x1="512" y1="180" x2="512" y2="512" stroke="#00F2FE" stroke-width="4"/>
+    <line x1="772" y1="330" x2="512" y2="512" stroke="#FA709A" stroke-width="4"/>
+    <line x1="772" y1="630" x2="512" y2="512" stroke="#7209B7" stroke-width="4"/>
+    <line x1="512" y1="780" x2="512" y2="512" stroke="#00F2FE" stroke-width="4"/>
+    <line x1="252" y1="630" x2="512" y2="512" stroke="#FA709A" stroke-width="4"/>
+    <line x1="252" y1="330" x2="512" y2="512" stroke="#7209B7" stroke-width="4"/>
+  </g>
+
+  <!-- 顶点感知粒子点云 -->
+  <circle cx="512" cy="180" r="10" fill="#00F2FE" filter="url(#glow2)"/>
+  <circle cx="772" cy="330" r="10" fill="#FA709A" filter="url(#glow2)"/>
+  <circle cx="772" cy="630" r="10" fill="#4CC9F0" filter="url(#glow2)"/>
+  <circle cx="512" cy="780" r="10" fill="#00F2FE" filter="url(#glow2)"/>
+  <circle cx="252" cy="630" r="10" fill="#FA709A" filter="url(#glow2)"/>
+  <circle cx="252" cy="330" r="10" fill="#4CC9F0" filter="url(#glow2)"/>
+
+  <!-- 中心核心能量珠 -->
+  <circle cx="512" cy="512" r="32" fill="#FFFFFF" filter="url(#glow2)"/>
+  <circle cx="512" cy="512" r="18" fill="#00F2FE"/>
+</svg></div>
+        <div class="mini-icon size-28"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090014"/>
+      <stop offset="50%" stop-color="#14012B"/>
+      <stop offset="100%" stop-color="#05000A"/>
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="50%" stop-color="#4FACFE"/>
+      <stop offset="100%" stop-color="#FA709A"/>
+    </linearGradient>
+    <linearGradient id="meshGrad" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#F72585" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7209B7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4CC9F0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg2)"/>
+
+  <!-- 3D 空间网格透视地平线 (Mesh Terrain) -->
+  <g stroke="#F72585" stroke-opacity="0.4" stroke-width="2">
+    <!-- 纵向透视线收敛到中心消失点 -->
+    <line x1="512" y1="512" x2="60" y2="980"/>
+    <line x1="512" y1="512" x2="220" y2="980"/>
+    <line x1="512" y1="512" x2="380" y2="980"/>
+    <line x1="512" y1="512" x2="512" y2="980"/>
+    <line x1="512" y1="512" x2="644" y2="980"/>
+    <line x1="512" y1="512" x2="804" y2="980"/>
+    <line x1="512" y1="512" x2="964" y2="980"/>
+
+    <!-- 横向等高线 (间距随透视放大) -->
+    <line x1="432" y1="550" x2="592" y2="550"/>
+    <line x1="372" y1="600" x2="652" y2="600"/>
+    <line x1="292" y1="670" x2="732" y2="670"/>
+    <line x1="192" y1="760" x2="832" y2="760"/>
+    <line x1="82" y1="880" x2="942" y2="880" stroke-width="3" stroke="#4CC9F0" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- 顶部赛博朋克空间几何多面体 (Sensory Prism) -->
+  <g filter="url(#glow2)">
+    <!-- 外围等边感知六边形 -->
+    <polygon points="512,180 772,330 772,630 512,780 252,630 252,330" fill="none" stroke="url(#cyanPurple)" stroke-width="6"/>
+    
+    <!-- 内部空间坐标连接棱线 -->
+    <line x1="512" y1="180" x2="512" y2="512" stroke="#00F2FE" stroke-width="4"/>
+    <line x1="772" y1="330" x2="512" y2="512" stroke="#FA709A" stroke-width="4"/>
+    <line x1="772" y1="630" x2="512" y2="512" stroke="#7209B7" stroke-width="4"/>
+    <line x1="512" y1="780" x2="512" y2="512" stroke="#00F2FE" stroke-width="4"/>
+    <line x1="252" y1="630" x2="512" y2="512" stroke="#FA709A" stroke-width="4"/>
+    <line x1="252" y1="330" x2="512" y2="512" stroke="#7209B7" stroke-width="4"/>
+  </g>
+
+  <!-- 顶点感知粒子点云 -->
+  <circle cx="512" cy="180" r="10" fill="#00F2FE" filter="url(#glow2)"/>
+  <circle cx="772" cy="330" r="10" fill="#FA709A" filter="url(#glow2)"/>
+  <circle cx="772" cy="630" r="10" fill="#4CC9F0" filter="url(#glow2)"/>
+  <circle cx="512" cy="780" r="10" fill="#00F2FE" filter="url(#glow2)"/>
+  <circle cx="252" cy="630" r="10" fill="#FA709A" filter="url(#glow2)"/>
+  <circle cx="252" cy="330" r="10" fill="#4CC9F0" filter="url(#glow2)"/>
+
+  <!-- 中心核心能量珠 -->
+  <circle cx="512" cy="512" r="32" fill="#FFFFFF" filter="url(#glow2)"/>
+  <circle cx="512" cy="512" r="18" fill="#00F2FE"/>
+</svg></div>
+      </div>
+      <div class="card-title">2. 赛博空间拓扑点云网格</div>
+      <div class="card-desc">霓虹黑紫底座，三维透视等高线地形网格，悬浮的彩色六角空间感知多面体与能量节点。</div>
+      <div class="btn-group">
+        <a href="icon_2_cyber_mesh.svg" download class="btn btn-primary">下载 SVG</a>
+        <a href="icon_2_cyber_mesh.svg" target="_blank" class="btn btn-secondary">独立查看</a>
+      </div>
+    </div>
+
+    <!-- 方案 3 -->
+    <div class="card">
+      <div class="icon-wrapper">
+        <div class="icon-preview">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070B"/>
+      <stop offset="50%" stop-color="#0F141C"/>
+      <stop offset="100%" stop-color="#06090E"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="blueLaser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="60%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <radialGradient id="sphereCore" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#93C5FD"/>
+      <stop offset="70%" stop-color="#1E40AF"/>
+      <stop offset="100%" stop-color="#0B132B"/>
+    </radialGradient>
+    <filter id="glow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg3)"/>
+
+  <!-- 精密外标刻度圆盘 -->
+  <circle cx="512" cy="512" r="410" fill="none" stroke="#2563EB" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="512" cy="512" r="390" fill="none" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="4" stroke-dasharray="4 28"/>
+
+  <!-- 陀螺仪空间万向节轨道 1 (俯仰环 45度倾斜) -->
+  <ellipse cx="512" cy="512" rx="360" ry="140" fill="none" stroke="url(#goldGrad)" stroke-width="8" transform="rotate(-30 512 512)" filter="url(#glow3)"/>
+
+  <!-- 陀螺仪空间万向节轨道 2 (横滚环 60度交叉) -->
+  <ellipse cx="512" cy="512" rx="360" ry="140" fill="none" stroke="url(#blueLaser)" stroke-width="8" transform="rotate(45 512 512)" filter="url(#glow3)"/>
+
+  <!-- 万向节支点精密卡扣 -->
+  <circle cx="210" cy="336" r="14" fill="#FFE066" filter="url(#glow3)"/>
+  <circle cx="814" cy="688" r="14" fill="#FFE066" filter="url(#glow3)"/>
+  <circle cx="270" cy="750" r="14" fill="#60A5FA" filter="url(#glow3)"/>
+  <circle cx="754" cy="274" r="14" fill="#60A5FA" filter="url(#glow3)"/>
+
+  <!-- 中心悬浮空间感知量子核心球体 -->
+  <circle cx="512" cy="512" r="110" fill="url(#sphereCore)" filter="url(#glow3)"/>
+
+  <!-- 核心球体内部几何透镜光环 -->
+  <ellipse cx="512" cy="512" rx="85" ry="30" fill="none" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="3" transform="rotate(-15 512 512)"/>
+  
+  <!-- 空间轴向光束 (X, Y, Z 重力锁定) -->
+  <line x1="512" y1="360" x2="512" y2="664" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="6 6"/>
+  <circle cx="512" cy="512" r="16" fill="#FFFFFF"/>
+</svg>
+        </div>
+      </div>
+      <div class="sizes-preview">
+        <div class="mini-icon size-64"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070B"/>
+      <stop offset="50%" stop-color="#0F141C"/>
+      <stop offset="100%" stop-color="#06090E"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="blueLaser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="60%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <radialGradient id="sphereCore" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#93C5FD"/>
+      <stop offset="70%" stop-color="#1E40AF"/>
+      <stop offset="100%" stop-color="#0B132B"/>
+    </radialGradient>
+    <filter id="glow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg3)"/>
+
+  <!-- 精密外标刻度圆盘 -->
+  <circle cx="512" cy="512" r="410" fill="none" stroke="#2563EB" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="512" cy="512" r="390" fill="none" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="4" stroke-dasharray="4 28"/>
+
+  <!-- 陀螺仪空间万向节轨道 1 (俯仰环 45度倾斜) -->
+  <ellipse cx="512" cy="512" rx="360" ry="140" fill="none" stroke="url(#goldGrad)" stroke-width="8" transform="rotate(-30 512 512)" filter="url(#glow3)"/>
+
+  <!-- 陀螺仪空间万向节轨道 2 (横滚环 60度交叉) -->
+  <ellipse cx="512" cy="512" rx="360" ry="140" fill="none" stroke="url(#blueLaser)" stroke-width="8" transform="rotate(45 512 512)" filter="url(#glow3)"/>
+
+  <!-- 万向节支点精密卡扣 -->
+  <circle cx="210" cy="336" r="14" fill="#FFE066" filter="url(#glow3)"/>
+  <circle cx="814" cy="688" r="14" fill="#FFE066" filter="url(#glow3)"/>
+  <circle cx="270" cy="750" r="14" fill="#60A5FA" filter="url(#glow3)"/>
+  <circle cx="754" cy="274" r="14" fill="#60A5FA" filter="url(#glow3)"/>
+
+  <!-- 中心悬浮空间感知量子核心球体 -->
+  <circle cx="512" cy="512" r="110" fill="url(#sphereCore)" filter="url(#glow3)"/>
+
+  <!-- 核心球体内部几何透镜光环 -->
+  <ellipse cx="512" cy="512" rx="85" ry="30" fill="none" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="3" transform="rotate(-15 512 512)"/>
+  
+  <!-- 空间轴向光束 (X, Y, Z 重力锁定) -->
+  <line x1="512" y1="360" x2="512" y2="664" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="6 6"/>
+  <circle cx="512" cy="512" r="16" fill="#FFFFFF"/>
+</svg></div>
+        <div class="mini-icon size-44"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070B"/>
+      <stop offset="50%" stop-color="#0F141C"/>
+      <stop offset="100%" stop-color="#06090E"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="blueLaser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="60%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <radialGradient id="sphereCore" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#93C5FD"/>
+      <stop offset="70%" stop-color="#1E40AF"/>
+      <stop offset="100%" stop-color="#0B132B"/>
+    </radialGradient>
+    <filter id="glow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg3)"/>
+
+  <!-- 精密外标刻度圆盘 -->
+  <circle cx="512" cy="512" r="410" fill="none" stroke="#2563EB" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="512" cy="512" r="390" fill="none" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="4" stroke-dasharray="4 28"/>
+
+  <!-- 陀螺仪空间万向节轨道 1 (俯仰环 45度倾斜) -->
+  <ellipse cx="512" cy="512" rx="360" ry="140" fill="none" stroke="url(#goldGrad)" stroke-width="8" transform="rotate(-30 512 512)" filter="url(#glow3)"/>
+
+  <!-- 陀螺仪空间万向节轨道 2 (横滚环 60度交叉) -->
+  <ellipse cx="512" cy="512" rx="360" ry="140" fill="none" stroke="url(#blueLaser)" stroke-width="8" transform="rotate(45 512 512)" filter="url(#glow3)"/>
+
+  <!-- 万向节支点精密卡扣 -->
+  <circle cx="210" cy="336" r="14" fill="#FFE066" filter="url(#glow3)"/>
+  <circle cx="814" cy="688" r="14" fill="#FFE066" filter="url(#glow3)"/>
+  <circle cx="270" cy="750" r="14" fill="#60A5FA" filter="url(#glow3)"/>
+  <circle cx="754" cy="274" r="14" fill="#60A5FA" filter="url(#glow3)"/>
+
+  <!-- 中心悬浮空间感知量子核心球体 -->
+  <circle cx="512" cy="512" r="110" fill="url(#sphereCore)" filter="url(#glow3)"/>
+
+  <!-- 核心球体内部几何透镜光环 -->
+  <ellipse cx="512" cy="512" rx="85" ry="30" fill="none" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="3" transform="rotate(-15 512 512)"/>
+  
+  <!-- 空间轴向光束 (X, Y, Z 重力锁定) -->
+  <line x1="512" y1="360" x2="512" y2="664" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="6 6"/>
+  <circle cx="512" cy="512" r="16" fill="#FFFFFF"/>
+</svg></div>
+        <div class="mini-icon size-28"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070B"/>
+      <stop offset="50%" stop-color="#0F141C"/>
+      <stop offset="100%" stop-color="#06090E"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="blueLaser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="60%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <radialGradient id="sphereCore" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#93C5FD"/>
+      <stop offset="70%" stop-color="#1E40AF"/>
+      <stop offset="100%" stop-color="#0B132B"/>
+    </radialGradient>
+    <filter id="glow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg3)"/>
+
+  <!-- 精密外标刻度圆盘 -->
+  <circle cx="512" cy="512" r="410" fill="none" stroke="#2563EB" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="512" cy="512" r="390" fill="none" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="4" stroke-dasharray="4 28"/>
+
+  <!-- 陀螺仪空间万向节轨道 1 (俯仰环 45度倾斜) -->
+  <ellipse cx="512" cy="512" rx="360" ry="140" fill="none" stroke="url(#goldGrad)" stroke-width="8" transform="rotate(-30 512 512)" filter="url(#glow3)"/>
+
+  <!-- 陀螺仪空间万向节轨道 2 (横滚环 60度交叉) -->
+  <ellipse cx="512" cy="512" rx="360" ry="140" fill="none" stroke="url(#blueLaser)" stroke-width="8" transform="rotate(45 512 512)" filter="url(#glow3)"/>
+
+  <!-- 万向节支点精密卡扣 -->
+  <circle cx="210" cy="336" r="14" fill="#FFE066" filter="url(#glow3)"/>
+  <circle cx="814" cy="688" r="14" fill="#FFE066" filter="url(#glow3)"/>
+  <circle cx="270" cy="750" r="14" fill="#60A5FA" filter="url(#glow3)"/>
+  <circle cx="754" cy="274" r="14" fill="#60A5FA" filter="url(#glow3)"/>
+
+  <!-- 中心悬浮空间感知量子核心球体 -->
+  <circle cx="512" cy="512" r="110" fill="url(#sphereCore)" filter="url(#glow3)"/>
+
+  <!-- 核心球体内部几何透镜光环 -->
+  <ellipse cx="512" cy="512" rx="85" ry="30" fill="none" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="3" transform="rotate(-15 512 512)"/>
+  
+  <!-- 空间轴向光束 (X, Y, Z 重力锁定) -->
+  <line x1="512" y1="360" x2="512" y2="664" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="6 6"/>
+  <circle cx="512" cy="512" r="16" fill="#FFFFFF"/>
+</svg></div>
+      </div>
+      <div class="card-title">3. 量子多传感器融合核</div>
+      <div class="card-desc">哑光曜石黑背景，香槟金与激光深蓝陀螺仪双轴万向节轨道，象征 ESKF 零漂收敛与空间姿态锁定。</div>
+      <div class="btn-group">
+        <a href="icon_3_sensor_fusion.svg" download class="btn btn-primary">下载 SVG</a>
+        <a href="icon_3_sensor_fusion.svg" target="_blank" class="btn btn-secondary">独立查看</a>
+      </div>
+    </div>
+
+    <!-- 方案 4 -->
+    <div class="card">
+      <div class="icon-wrapper">
+        <div class="icon-preview">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05030A"/>
+      <stop offset="50%" stop-color="#110724"/>
+      <stop offset="100%" stop-color="#080214"/>
+    </linearGradient>
+    <radialGradient id="thermalRadial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="20%" stop-color="#FFDD00"/>
+      <stop offset="45%" stop-color="#FF5400"/>
+      <stop offset="70%" stop-color="#7209B7"/>
+      <stop offset="90%" stop-color="#3A0CA3"/>
+      <stop offset="100%" stop-color="#03071E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4CC9F0"/>
+      <stop offset="35%" stop-color="#F72585"/>
+      <stop offset="70%" stop-color="#FFDD00"/>
+      <stop offset="100%" stop-color="#4CC9F0"/>
+    </linearGradient>
+    <filter id="glow4" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg4)"/>
+
+  <!-- 仿生机械复眼外圈光阑 -->
+  <circle cx="512" cy="512" r="410" fill="none" stroke="#7209B7" stroke-opacity="0.35" stroke-width="3"/>
+  <circle cx="512" cy="512" r="360" fill="none" stroke="url(#ringGrad4)" stroke-width="6" stroke-dasharray="120 18" filter="url(#glow4)"/>
+
+  <!-- 热成像等温阶梯云团 -->
+  <circle cx="512" cy="512" r="280" fill="url(#thermalRadial)"/>
+
+  <!-- 机械瞳孔光圈叶片 (Aperture Iris) -->
+  <g stroke="#05030A" stroke-width="5" fill="none">
+    <path d="M 512 292 C 592 362 672 442 732 512"/>
+    <path d="M 732 512 C 672 592 592 672 512 732"/>
+    <path d="M 512 732 C 432 672 352 592 292 512"/>
+    <path d="M 292 512 C 352 432 432 362 512 292"/>
+  </g>
+
+  <!-- 空间深度内视镜瞳孔 -->
+  <circle cx="512" cy="512" r="130" fill="#0A0417" stroke="#FFDD00" stroke-width="4" filter="url(#glow4)"/>
+  
+  <!-- 瞳孔内部激光测距三维十字架 -->
+  <line x1="512" y1="412" x2="512" y2="612" stroke="#FFDD00" stroke-width="3"/>
+  <line x1="412" y1="512" x2="612" y2="512" stroke="#FFDD00" stroke-width="3"/>
+  <circle cx="512" cy="512" r="40" fill="none" stroke="#FF5400" stroke-width="3" stroke-dasharray="8 6"/>
+  <circle cx="512" cy="512" r="14" fill="#FFFFFF" filter="url(#glow4)"/>
+</svg>
+        </div>
+      </div>
+      <div class="sizes-preview">
+        <div class="mini-icon size-64"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05030A"/>
+      <stop offset="50%" stop-color="#110724"/>
+      <stop offset="100%" stop-color="#080214"/>
+    </linearGradient>
+    <radialGradient id="thermalRadial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="20%" stop-color="#FFDD00"/>
+      <stop offset="45%" stop-color="#FF5400"/>
+      <stop offset="70%" stop-color="#7209B7"/>
+      <stop offset="90%" stop-color="#3A0CA3"/>
+      <stop offset="100%" stop-color="#03071E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4CC9F0"/>
+      <stop offset="35%" stop-color="#F72585"/>
+      <stop offset="70%" stop-color="#FFDD00"/>
+      <stop offset="100%" stop-color="#4CC9F0"/>
+    </linearGradient>
+    <filter id="glow4" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg4)"/>
+
+  <!-- 仿生机械复眼外圈光阑 -->
+  <circle cx="512" cy="512" r="410" fill="none" stroke="#7209B7" stroke-opacity="0.35" stroke-width="3"/>
+  <circle cx="512" cy="512" r="360" fill="none" stroke="url(#ringGrad4)" stroke-width="6" stroke-dasharray="120 18" filter="url(#glow4)"/>
+
+  <!-- 热成像等温阶梯云团 -->
+  <circle cx="512" cy="512" r="280" fill="url(#thermalRadial)"/>
+
+  <!-- 机械瞳孔光圈叶片 (Aperture Iris) -->
+  <g stroke="#05030A" stroke-width="5" fill="none">
+    <path d="M 512 292 C 592 362 672 442 732 512"/>
+    <path d="M 732 512 C 672 592 592 672 512 732"/>
+    <path d="M 512 732 C 432 672 352 592 292 512"/>
+    <path d="M 292 512 C 352 432 432 362 512 292"/>
+  </g>
+
+  <!-- 空间深度内视镜瞳孔 -->
+  <circle cx="512" cy="512" r="130" fill="#0A0417" stroke="#FFDD00" stroke-width="4" filter="url(#glow4)"/>
+  
+  <!-- 瞳孔内部激光测距三维十字架 -->
+  <line x1="512" y1="412" x2="512" y2="612" stroke="#FFDD00" stroke-width="3"/>
+  <line x1="412" y1="512" x2="612" y2="512" stroke="#FFDD00" stroke-width="3"/>
+  <circle cx="512" cy="512" r="40" fill="none" stroke="#FF5400" stroke-width="3" stroke-dasharray="8 6"/>
+  <circle cx="512" cy="512" r="14" fill="#FFFFFF" filter="url(#glow4)"/>
+</svg></div>
+        <div class="mini-icon size-44"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05030A"/>
+      <stop offset="50%" stop-color="#110724"/>
+      <stop offset="100%" stop-color="#080214"/>
+    </linearGradient>
+    <radialGradient id="thermalRadial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="20%" stop-color="#FFDD00"/>
+      <stop offset="45%" stop-color="#FF5400"/>
+      <stop offset="70%" stop-color="#7209B7"/>
+      <stop offset="90%" stop-color="#3A0CA3"/>
+      <stop offset="100%" stop-color="#03071E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4CC9F0"/>
+      <stop offset="35%" stop-color="#F72585"/>
+      <stop offset="70%" stop-color="#FFDD00"/>
+      <stop offset="100%" stop-color="#4CC9F0"/>
+    </linearGradient>
+    <filter id="glow4" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg4)"/>
+
+  <!-- 仿生机械复眼外圈光阑 -->
+  <circle cx="512" cy="512" r="410" fill="none" stroke="#7209B7" stroke-opacity="0.35" stroke-width="3"/>
+  <circle cx="512" cy="512" r="360" fill="none" stroke="url(#ringGrad4)" stroke-width="6" stroke-dasharray="120 18" filter="url(#glow4)"/>
+
+  <!-- 热成像等温阶梯云团 -->
+  <circle cx="512" cy="512" r="280" fill="url(#thermalRadial)"/>
+
+  <!-- 机械瞳孔光圈叶片 (Aperture Iris) -->
+  <g stroke="#05030A" stroke-width="5" fill="none">
+    <path d="M 512 292 C 592 362 672 442 732 512"/>
+    <path d="M 732 512 C 672 592 592 672 512 732"/>
+    <path d="M 512 732 C 432 672 352 592 292 512"/>
+    <path d="M 292 512 C 352 432 432 362 512 292"/>
+  </g>
+
+  <!-- 空间深度内视镜瞳孔 -->
+  <circle cx="512" cy="512" r="130" fill="#0A0417" stroke="#FFDD00" stroke-width="4" filter="url(#glow4)"/>
+  
+  <!-- 瞳孔内部激光测距三维十字架 -->
+  <line x1="512" y1="412" x2="512" y2="612" stroke="#FFDD00" stroke-width="3"/>
+  <line x1="412" y1="512" x2="612" y2="512" stroke="#FFDD00" stroke-width="3"/>
+  <circle cx="512" cy="512" r="40" fill="none" stroke="#FF5400" stroke-width="3" stroke-dasharray="8 6"/>
+  <circle cx="512" cy="512" r="14" fill="#FFFFFF" filter="url(#glow4)"/>
+</svg></div>
+        <div class="mini-icon size-28"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05030A"/>
+      <stop offset="50%" stop-color="#110724"/>
+      <stop offset="100%" stop-color="#080214"/>
+    </linearGradient>
+    <radialGradient id="thermalRadial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="20%" stop-color="#FFDD00"/>
+      <stop offset="45%" stop-color="#FF5400"/>
+      <stop offset="70%" stop-color="#7209B7"/>
+      <stop offset="90%" stop-color="#3A0CA3"/>
+      <stop offset="100%" stop-color="#03071E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4CC9F0"/>
+      <stop offset="35%" stop-color="#F72585"/>
+      <stop offset="70%" stop-color="#FFDD00"/>
+      <stop offset="100%" stop-color="#4CC9F0"/>
+    </linearGradient>
+    <filter id="glow4" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg4)"/>
+
+  <!-- 仿生机械复眼外圈光阑 -->
+  <circle cx="512" cy="512" r="410" fill="none" stroke="#7209B7" stroke-opacity="0.35" stroke-width="3"/>
+  <circle cx="512" cy="512" r="360" fill="none" stroke="url(#ringGrad4)" stroke-width="6" stroke-dasharray="120 18" filter="url(#glow4)"/>
+
+  <!-- 热成像等温阶梯云团 -->
+  <circle cx="512" cy="512" r="280" fill="url(#thermalRadial)"/>
+
+  <!-- 机械瞳孔光圈叶片 (Aperture Iris) -->
+  <g stroke="#05030A" stroke-width="5" fill="none">
+    <path d="M 512 292 C 592 362 672 442 732 512"/>
+    <path d="M 732 512 C 672 592 592 672 512 732"/>
+    <path d="M 512 732 C 432 672 352 592 292 512"/>
+    <path d="M 292 512 C 352 432 432 362 512 292"/>
+  </g>
+
+  <!-- 空间深度内视镜瞳孔 -->
+  <circle cx="512" cy="512" r="130" fill="#0A0417" stroke="#FFDD00" stroke-width="4" filter="url(#glow4)"/>
+  
+  <!-- 瞳孔内部激光测距三维十字架 -->
+  <line x1="512" y1="412" x2="512" y2="612" stroke="#FFDD00" stroke-width="3"/>
+  <line x1="412" y1="512" x2="612" y2="512" stroke="#FFDD00" stroke-width="3"/>
+  <circle cx="512" cy="512" r="40" fill="none" stroke="#FF5400" stroke-width="3" stroke-dasharray="8 6"/>
+  <circle cx="512" cy="512" r="14" fill="#FFFFFF" filter="url(#glow4)"/>
+</svg></div>
+      </div>
+      <div class="card-title">4. 幽灵仿生热成像之眼</div>
+      <div class="card-desc">黑体辐射多温区伪彩阶梯云，机械光阑复眼结构，内嵌测距十字与微光空间三维坐标。</div>
+      <div class="btn-group">
+        <a href="icon_4_thermal_eye.svg" download class="btn btn-primary">下载 SVG</a>
+        <a href="icon_4_thermal_eye.svg" target="_blank" class="btn btn-secondary">独立查看</a>
+      </div>
+    </div>
+
+    <!-- 方案 5 -->
+    <div class="card">
+      <div class="icon-wrapper">
+        <div class="icon-preview">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="sweepGrad" x1="50%" y1="50%" x2="100%" y2="20%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow5" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg5)"/>
+
+  <!-- 极简纤细同心圆环 -->
+  <circle cx="512" cy="512" r="390" fill="none" stroke="#1E293B" stroke-width="2"/>
+  <circle cx="512" cy="512" r="300" fill="none" stroke="#334155" stroke-width="2.5"/>
+  <circle cx="512" cy="512" r="210" fill="none" stroke="#0284C7" stroke-opacity="0.5" stroke-width="3"/>
+  <circle cx="512" cy="512" r="120" fill="none" stroke="#38BDF8" stroke-width="4"/>
+
+  <!-- 90度主测距象限刻度 -->
+  <circle cx="512" cy="122" r="6" fill="#38BDF8"/>
+  <circle cx="902" cy="512" r="6" fill="#38BDF8"/>
+  <circle cx="512" cy="902" r="6" fill="#38BDF8"/>
+  <circle cx="122" cy="512" r="6" fill="#38BDF8"/>
+
+  <!-- 45度高精度动态测距扇形光锥 -->
+  <path d="M 512 512 L 778 246 A 376 376 0 0 0 512 136 Z" fill="url(#sweepGrad)"/>
+
+  <!-- 极简十字瞄准线 (带端点微距) -->
+  <line x1="512" y1="230" x2="512" y2="450" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="512" y1="574" x2="512" y2="794" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="230" y1="512" x2="450" y2="512" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="574" y1="512" x2="794" y2="512" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 目标捕获框角标 (Target Lock) -->
+  <path d="M 332 372 L 332 332 L 372 332" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 692 372 L 692 332 L 652 332" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 332 652 L 332 692 L 372 692" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 692 652 L 692 692 L 652 692" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- 极纯净高亮中央光核 -->
+  <circle cx="512" cy="512" r="24" fill="url(#cyanAccent)" filter="url(#glow5)"/>
+  <circle cx="512" cy="512" r="10" fill="#FFFFFF"/>
+</svg>
+        </div>
+      </div>
+      <div class="sizes-preview">
+        <div class="mini-icon size-64"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="sweepGrad" x1="50%" y1="50%" x2="100%" y2="20%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow5" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg5)"/>
+
+  <!-- 极简纤细同心圆环 -->
+  <circle cx="512" cy="512" r="390" fill="none" stroke="#1E293B" stroke-width="2"/>
+  <circle cx="512" cy="512" r="300" fill="none" stroke="#334155" stroke-width="2.5"/>
+  <circle cx="512" cy="512" r="210" fill="none" stroke="#0284C7" stroke-opacity="0.5" stroke-width="3"/>
+  <circle cx="512" cy="512" r="120" fill="none" stroke="#38BDF8" stroke-width="4"/>
+
+  <!-- 90度主测距象限刻度 -->
+  <circle cx="512" cy="122" r="6" fill="#38BDF8"/>
+  <circle cx="902" cy="512" r="6" fill="#38BDF8"/>
+  <circle cx="512" cy="902" r="6" fill="#38BDF8"/>
+  <circle cx="122" cy="512" r="6" fill="#38BDF8"/>
+
+  <!-- 45度高精度动态测距扇形光锥 -->
+  <path d="M 512 512 L 778 246 A 376 376 0 0 0 512 136 Z" fill="url(#sweepGrad)"/>
+
+  <!-- 极简十字瞄准线 (带端点微距) -->
+  <line x1="512" y1="230" x2="512" y2="450" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="512" y1="574" x2="512" y2="794" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="230" y1="512" x2="450" y2="512" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="574" y1="512" x2="794" y2="512" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 目标捕获框角标 (Target Lock) -->
+  <path d="M 332 372 L 332 332 L 372 332" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 692 372 L 692 332 L 652 332" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 332 652 L 332 692 L 372 692" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 692 652 L 692 692 L 652 692" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- 极纯净高亮中央光核 -->
+  <circle cx="512" cy="512" r="24" fill="url(#cyanAccent)" filter="url(#glow5)"/>
+  <circle cx="512" cy="512" r="10" fill="#FFFFFF"/>
+</svg></div>
+        <div class="mini-icon size-44"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="sweepGrad" x1="50%" y1="50%" x2="100%" y2="20%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow5" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg5)"/>
+
+  <!-- 极简纤细同心圆环 -->
+  <circle cx="512" cy="512" r="390" fill="none" stroke="#1E293B" stroke-width="2"/>
+  <circle cx="512" cy="512" r="300" fill="none" stroke="#334155" stroke-width="2.5"/>
+  <circle cx="512" cy="512" r="210" fill="none" stroke="#0284C7" stroke-opacity="0.5" stroke-width="3"/>
+  <circle cx="512" cy="512" r="120" fill="none" stroke="#38BDF8" stroke-width="4"/>
+
+  <!-- 90度主测距象限刻度 -->
+  <circle cx="512" cy="122" r="6" fill="#38BDF8"/>
+  <circle cx="902" cy="512" r="6" fill="#38BDF8"/>
+  <circle cx="512" cy="902" r="6" fill="#38BDF8"/>
+  <circle cx="122" cy="512" r="6" fill="#38BDF8"/>
+
+  <!-- 45度高精度动态测距扇形光锥 -->
+  <path d="M 512 512 L 778 246 A 376 376 0 0 0 512 136 Z" fill="url(#sweepGrad)"/>
+
+  <!-- 极简十字瞄准线 (带端点微距) -->
+  <line x1="512" y1="230" x2="512" y2="450" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="512" y1="574" x2="512" y2="794" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="230" y1="512" x2="450" y2="512" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="574" y1="512" x2="794" y2="512" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 目标捕获框角标 (Target Lock) -->
+  <path d="M 332 372 L 332 332 L 372 332" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 692 372 L 692 332 L 652 332" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 332 652 L 332 692 L 372 692" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 692 652 L 692 692 L 652 692" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- 极纯净高亮中央光核 -->
+  <circle cx="512" cy="512" r="24" fill="url(#cyanAccent)" filter="url(#glow5)"/>
+  <circle cx="512" cy="512" r="10" fill="#FFFFFF"/>
+</svg></div>
+        <div class="mini-icon size-28"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="sweepGrad" x1="50%" y1="50%" x2="100%" y2="20%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow5" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg5)"/>
+
+  <!-- 极简纤细同心圆环 -->
+  <circle cx="512" cy="512" r="390" fill="none" stroke="#1E293B" stroke-width="2"/>
+  <circle cx="512" cy="512" r="300" fill="none" stroke="#334155" stroke-width="2.5"/>
+  <circle cx="512" cy="512" r="210" fill="none" stroke="#0284C7" stroke-opacity="0.5" stroke-width="3"/>
+  <circle cx="512" cy="512" r="120" fill="none" stroke="#38BDF8" stroke-width="4"/>
+
+  <!-- 90度主测距象限刻度 -->
+  <circle cx="512" cy="122" r="6" fill="#38BDF8"/>
+  <circle cx="902" cy="512" r="6" fill="#38BDF8"/>
+  <circle cx="512" cy="902" r="6" fill="#38BDF8"/>
+  <circle cx="122" cy="512" r="6" fill="#38BDF8"/>
+
+  <!-- 45度高精度动态测距扇形光锥 -->
+  <path d="M 512 512 L 778 246 A 376 376 0 0 0 512 136 Z" fill="url(#sweepGrad)"/>
+
+  <!-- 极简十字瞄准线 (带端点微距) -->
+  <line x1="512" y1="230" x2="512" y2="450" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="512" y1="574" x2="512" y2="794" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="230" y1="512" x2="450" y2="512" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="574" y1="512" x2="794" y2="512" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 目标捕获框角标 (Target Lock) -->
+  <path d="M 332 372 L 332 332 L 372 332" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 692 372 L 692 332 L 652 332" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 332 652 L 332 692 L 372 692" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 692 652 L 692 692 L 652 692" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- 极纯净高亮中央光核 -->
+  <circle cx="512" cy="512" r="24" fill="url(#cyanAccent)" filter="url(#glow5)"/>
+  <circle cx="512" cy="512" r="10" fill="#FFFFFF"/>
+</svg></div>
+      </div>
+      <div class="card-title">5. 极简现代战术雷达 (Apple Style)</div>
+      <div class="card-desc">纯粹深空深蓝灰与极光天蓝，黄金分割同心环，45度测距光锥与目标锁定角标，小尺寸极具辨识度。</div>
+      <div class="btn-group">
+        <a href="icon_5_minimal_radar.svg" download class="btn btn-primary">下载 SVG</a>
+        <a href="icon_5_minimal_radar.svg" target="_blank" class="btn btn-secondary">独立查看</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

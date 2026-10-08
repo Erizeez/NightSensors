@@ -1,0 +1,31 @@
+MIT License
+
+Copyright (c) 2026 NightSensors Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+### Safety & Research Disclaimer (安全与科研用途免责声明)
+
+NightSensors is an experimental research and developer exploration project intended solely for spatial computing, sensor fusion, computer vision, and graphics experimentation.
+
+1. **Non-Safety-Critical**: This software is NOT designed, certified, or intended for use in hazardous environments, vehicular navigation, low-light driving, medical equipment, tactical defense, search and rescue, or any life-critical scenarios.
+2. **Environmental Limitations**: Infrared structured light and LiDAR sensors are subject to physical scattering, specular reflection, and range limitations. Users must NOT rely solely on this application for obstacle avoidance in total darkness where personal injury or property damage could occur.
+3. **No Warranty**: The contributors and authors assume no liability or responsibility for any damages, personal injury, hardware malfunctions, or legal consequences resulting from the direct or indirect use of this software.

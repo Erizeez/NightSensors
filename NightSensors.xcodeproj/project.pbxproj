@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		057713AD3EA9291C99AA465A /* ESKFConvergenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A026D1EDA771BDD976C737F9 /* ESKFConvergenceTests.swift */; };
+		084DEE410D1DB9AD471A0C63 /* VoxelGridFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1314E3EC1C9A8212F62A77A7 /* VoxelGridFilter.swift */; };
+		0FB61D7615C77EAF50BCD2E4 /* RANSACPlaneDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC0C0862F6C1B435E5FF0BE /* RANSACPlaneDetector.swift */; };
+		1A07B5D14361437F05005BB2 /* SensorDiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EB1E45529D76158247CDB7 /* SensorDiagnosticsView.swift */; };
+		2049E57A7264937CA4ABE092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5FD55D6F3E68CC672238A59 /* Assets.xcassets */; };
+		30AB2E942CCFFF4BD3DA54F8 /* DriftCompensationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D09FB0B90282CA86E7714 /* DriftCompensationEngine.swift */; };
+		3330D60FFEE057F4592C658A /* HapticSonarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED8518A0A52559F286EA3AD /* HapticSonarEngine.swift */; };
+		3AD24FEBAD85F9DC0B8AA078 /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD30A46CB1A68374203E11A0 /* MetalRenderer.swift */; };
+		5E6EF0EB7F71153416A74247 /* TrueDepthInfraredStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17036F4AAFA4F52C35626818 /* TrueDepthInfraredStream.swift */; };
+		6722EB441B9F3FD8EFA69404 /* MatrixOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3701CD5B9131D1C110D9DB23 /* MatrixOperations.swift */; };
+		6C0E38B597F2CC4216658C26 /* RANSACPlaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0216ACCE19AD3DD93794A /* RANSACPlaneTests.swift */; };
+		6FFB83597141E899E6E8E128 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491C7364C6218A0E43666E5 /* ContentView.swift */; };
+		708AEA84CAFBDD60452630E7 /* SensorPipelineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC678570FB891A06E92C9F4 /* SensorPipelineManager.swift */; };
+		8D7B213F95BCA43E1E827035 /* MetalShaderSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180834A4019F86069425369 /* MetalShaderSource.swift */; };
+		B19E6369CB478898B5B441E4 /* PointToPlaneICP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAE84E82C638A6E11ED39D1 /* PointToPlaneICP.swift */; };
+		B2C8646F15A5F49C741E05F7 /* ESKFStateEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C9A41EA5AE39C91E1DBC3F /* ESKFStateEstimator.swift */; };
+		B52838B4DEFBBE0DC95A627C /* CyberpunkHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE73B2FBF1CB7F4808D1156 /* CyberpunkHUDView.swift */; };
+		C4EFA028C548355CB4C6D6C7 /* NightSensorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD41821B13661CCA8EEF2712 /* NightSensorsApp.swift */; };
+		C6CBD49C48646208DA0B4CC5 /* ExtrinsicCalibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B179A708AE253C561519E /* ExtrinsicCalibration.swift */; };
+		C79FA3CCEFF31DAE43C87B2B /* PointToPlaneICPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F95E641F0CFF5914CAB54E /* PointToPlaneICPTests.swift */; };
+		D8E02B4E041D44364D0C4C5B /* MatrixAndLieAlgebraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F2595B01E82A158736782 /* MatrixAndLieAlgebraTests.swift */; };
+		DCE35D1C2FF85BA3EA960E60 /* VisualizationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545072B1F5F1237A387139E /* VisualizationMode.swift */; };
+		E3B358F84027E760A8E544B4 /* SIMD+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F13EE49616FCE5ED34FFC3 /* SIMD+Extensions.swift */; };
+		EC2B68565B99DC46EB9229B5 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9244943F1C2000B83016B606 /* Shaders.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E8751B0B23152B640D0DB1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6D692E5F337468F8BA2C7A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F3EF43093AD48801666D288;
+			remoteInfo = NightSensors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1180834A4019F86069425369 /* MetalShaderSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalShaderSource.swift; sourceTree = "<group>"; };
+		1314E3EC1C9A8212F62A77A7 /* VoxelGridFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelGridFilter.swift; sourceTree = "<group>"; };
+		1545072B1F5F1237A387139E /* VisualizationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationMode.swift; sourceTree = "<group>"; };
+		17036F4AAFA4F52C35626818 /* TrueDepthInfraredStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueDepthInfraredStream.swift; sourceTree = "<group>"; };
+		3701CD5B9131D1C110D9DB23 /* MatrixOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixOperations.swift; sourceTree = "<group>"; };
+		3B848BCDC31F26B3C75B513B /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		3B8F2595B01E82A158736782 /* MatrixAndLieAlgebraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAndLieAlgebraTests.swift; sourceTree = "<group>"; };
+		4A3D09FB0B90282CA86E7714 /* DriftCompensationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriftCompensationEngine.swift; sourceTree = "<group>"; };
+		697D27927EA8BE805FF42E24 /* NightSensors.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = NightSensors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B0216ACCE19AD3DD93794A /* RANSACPlaneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RANSACPlaneTests.swift; sourceTree = "<group>"; };
+		7AAE84E82C638A6E11ED39D1 /* PointToPlaneICP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointToPlaneICP.swift; sourceTree = "<group>"; };
+		7ED8518A0A52559F286EA3AD /* HapticSonarEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticSonarEngine.swift; sourceTree = "<group>"; };
+		8491C7364C6218A0E43666E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		89EB1E45529D76158247CDB7 /* SensorDiagnosticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDiagnosticsView.swift; sourceTree = "<group>"; };
+		9244943F1C2000B83016B606 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		97F95E641F0CFF5914CAB54E /* PointToPlaneICPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointToPlaneICPTests.swift; sourceTree = "<group>"; };
+		9D2B179A708AE253C561519E /* ExtrinsicCalibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrinsicCalibration.swift; sourceTree = "<group>"; };
+		A026D1EDA771BDD976C737F9 /* ESKFConvergenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESKFConvergenceTests.swift; sourceTree = "<group>"; };
+		B1C9A41EA5AE39C91E1DBC3F /* ESKFStateEstimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESKFStateEstimator.swift; sourceTree = "<group>"; };
+		BC17E3F103D40FAF1C1CB6AB /* NightSensorsTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NightSensorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD41821B13661CCA8EEF2712 /* NightSensorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightSensorsApp.swift; sourceTree = "<group>"; };
+		BEFA9AD8F6FABCF3C21233C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C5FD55D6F3E68CC672238A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFC678570FB891A06E92C9F4 /* SensorPipelineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorPipelineManager.swift; sourceTree = "<group>"; };
+		ECC0C0862F6C1B435E5FF0BE /* RANSACPlaneDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RANSACPlaneDetector.swift; sourceTree = "<group>"; };
+		F1F13EE49616FCE5ED34FFC3 /* SIMD+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SIMD+Extensions.swift"; sourceTree = "<group>"; };
+		FD30A46CB1A68374203E11A0 /* MetalRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
+		FFE73B2FBF1CB7F4808D1156 /* CyberpunkHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyberpunkHUDView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		09A8684F5F0D083FC97D5074 /* NightSensors */ = {
+			isa = PBXGroup;
+			children = (
+				C5FD55D6F3E68CC672238A59 /* Assets.xcassets */,
+				81739435D97AA7FB5FFBFED9 /* App */,
+				EA8EAC95C4B43B8382D33DB8 /* Core */,
+				273BAE73C1511E218F7337B7 /* UI */,
+			);
+			path = NightSensors;
+			sourceTree = "<group>";
+		};
+		17F711FF6E51DE1E83313A59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				697D27927EA8BE805FF42E24 /* NightSensors.app */,
+				BC17E3F103D40FAF1C1CB6AB /* NightSensorsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		273BAE73C1511E218F7337B7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8491C7364C6218A0E43666E5 /* ContentView.swift */,
+				FFE73B2FBF1CB7F4808D1156 /* CyberpunkHUDView.swift */,
+				89EB1E45529D76158247CDB7 /* SensorDiagnosticsView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7442BB737699A1CE60801627 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				FD30A46CB1A68374203E11A0 /* MetalRenderer.swift */,
+				1180834A4019F86069425369 /* MetalShaderSource.swift */,
+				9244943F1C2000B83016B606 /* Shaders.metal */,
+				3B848BCDC31F26B3C75B513B /* ShaderTypes.h */,
+				1545072B1F5F1237A387139E /* VisualizationMode.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		7B40A41791CDC212F21F936A /* Haptics */ = {
+			isa = PBXGroup;
+			children = (
+				7ED8518A0A52559F286EA3AD /* HapticSonarEngine.swift */,
+			);
+			path = Haptics;
+			sourceTree = "<group>";
+		};
+		81739435D97AA7FB5FFBFED9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BEFA9AD8F6FABCF3C21233C0 /* Info.plist */,
+				BD41821B13661CCA8EEF2712 /* NightSensorsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		87CB0268729BACE84C1EBA13 /* Calibration */ = {
+			isa = PBXGroup;
+			children = (
+				9D2B179A708AE253C561519E /* ExtrinsicCalibration.swift */,
+			);
+			path = Calibration;
+			sourceTree = "<group>";
+		};
+		9186415529951AE0A1998583 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				4A3D09FB0B90282CA86E7714 /* DriftCompensationEngine.swift */,
+				B1C9A41EA5AE39C91E1DBC3F /* ESKFStateEstimator.swift */,
+				7AAE84E82C638A6E11ED39D1 /* PointToPlaneICP.swift */,
+				ECC0C0862F6C1B435E5FF0BE /* RANSACPlaneDetector.swift */,
+				1314E3EC1C9A8212F62A77A7 /* VoxelGridFilter.swift */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		95D58AAFE67EA3CB0BD4558F /* NightSensorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A026D1EDA771BDD976C737F9 /* ESKFConvergenceTests.swift */,
+				3B8F2595B01E82A158736782 /* MatrixAndLieAlgebraTests.swift */,
+				97F95E641F0CFF5914CAB54E /* PointToPlaneICPTests.swift */,
+				72B0216ACCE19AD3DD93794A /* RANSACPlaneTests.swift */,
+			);
+			path = NightSensorsTests;
+			sourceTree = "<group>";
+		};
+		9FD2B04598A1169EEF8FD17B /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				3701CD5B9131D1C110D9DB23 /* MatrixOperations.swift */,
+				F1F13EE49616FCE5ED34FFC3 /* SIMD+Extensions.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		BC4535A34999A38219D10D42 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				DFC678570FB891A06E92C9F4 /* SensorPipelineManager.swift */,
+				17036F4AAFA4F52C35626818 /* TrueDepthInfraredStream.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		EA8EAC95C4B43B8382D33DB8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9186415529951AE0A1998583 /* Algorithm */,
+				87CB0268729BACE84C1EBA13 /* Calibration */,
+				7B40A41791CDC212F21F936A /* Haptics */,
+				9FD2B04598A1169EEF8FD17B /* Math */,
+				7442BB737699A1CE60801627 /* Rendering */,
+				BC4535A34999A38219D10D42 /* Sensors */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F7ED2194EF2A9CADDEED0D16 = {
+			isa = PBXGroup;
+			children = (
+				09A8684F5F0D083FC97D5074 /* NightSensors */,
+				95D58AAFE67EA3CB0BD4558F /* NightSensorsTests */,
+				17F711FF6E51DE1E83313A59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F3EF43093AD48801666D288 /* NightSensors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3C7F897BA2DA0AB047A8162 /* Build configuration list for PBXNativeTarget "NightSensors" */;
+			buildPhases = (
+				AF5C5717BADDDF43190AAB63 /* Sources */,
+				62803E083C9532B796FF7C2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NightSensors;
+			packageProductDependencies = (
+			);
+			productName = NightSensors;
+			productReference = 697D27927EA8BE805FF42E24 /* NightSensors.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF31B38862A6688281C5490F /* NightSensorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49F815C8A8D865EE2A9FED81 /* Build configuration list for PBXNativeTarget "NightSensorsTests" */;
+			buildPhases = (
+				53FE5459446DCC02B9508C77 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05D2C3A5DC46716D6C16205D /* PBXTargetDependency */,
+			);
+			name = NightSensorsTests;
+			packageProductDependencies = (
+			);
+			productName = NightSensorsTests;
+			productReference = BC17E3F103D40FAF1C1CB6AB /* NightSensorsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6D692E5F337468F8BA2C7A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					8F3EF43093AD48801666D288 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					DF31B38862A6688281C5490F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B97FB3E1E8E849427EC35A10 /* Build configuration list for PBXProject "NightSensors" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F7ED2194EF2A9CADDEED0D16;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 17F711FF6E51DE1E83313A59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F3EF43093AD48801666D288 /* NightSensors */,
+				DF31B38862A6688281C5490F /* NightSensorsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62803E083C9532B796FF7C2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2049E57A7264937CA4ABE092 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53FE5459446DCC02B9508C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057713AD3EA9291C99AA465A /* ESKFConvergenceTests.swift in Sources */,
+				D8E02B4E041D44364D0C4C5B /* MatrixAndLieAlgebraTests.swift in Sources */,
+				C79FA3CCEFF31DAE43C87B2B /* PointToPlaneICPTests.swift in Sources */,
+				6C0E38B597F2CC4216658C26 /* RANSACPlaneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5C5717BADDDF43190AAB63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FFB83597141E899E6E8E128 /* ContentView.swift in Sources */,
+				B52838B4DEFBBE0DC95A627C /* CyberpunkHUDView.swift in Sources */,
+				30AB2E942CCFFF4BD3DA54F8 /* DriftCompensationEngine.swift in Sources */,
+				B2C8646F15A5F49C741E05F7 /* ESKFStateEstimator.swift in Sources */,
+				C6CBD49C48646208DA0B4CC5 /* ExtrinsicCalibration.swift in Sources */,
+				3330D60FFEE057F4592C658A /* HapticSonarEngine.swift in Sources */,
+				6722EB441B9F3FD8EFA69404 /* MatrixOperations.swift in Sources */,
+				3AD24FEBAD85F9DC0B8AA078 /* MetalRenderer.swift in Sources */,
+				8D7B213F95BCA43E1E827035 /* MetalShaderSource.swift in Sources */,
+				C4EFA028C548355CB4C6D6C7 /* NightSensorsApp.swift in Sources */,
+				B19E6369CB478898B5B441E4 /* PointToPlaneICP.swift in Sources */,
+				0FB61D7615C77EAF50BCD2E4 /* RANSACPlaneDetector.swift in Sources */,
+				E3B358F84027E760A8E544B4 /* SIMD+Extensions.swift in Sources */,
+				1A07B5D14361437F05005BB2 /* SensorDiagnosticsView.swift in Sources */,
+				708AEA84CAFBDD60452630E7 /* SensorPipelineManager.swift in Sources */,
+				EC2B68565B99DC46EB9229B5 /* Shaders.metal in Sources */,
+				5E6EF0EB7F71153416A74247 /* TrueDepthInfraredStream.swift in Sources */,
+				DCE35D1C2FF85BA3EA960E60 /* VisualizationMode.swift in Sources */,
+				084DEE410D1DB9AD471A0C63 /* VoxelGridFilter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05D2C3A5DC46716D6C16205D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F3EF43093AD48801666D288 /* NightSensors */;
+			targetProxy = 7E8751B0B23152B640D0DB1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2309A7F2D5657C92A7DF9E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sail.NightSensorsTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NightSensors.app/NightSensors";
+			};
+			name = Debug;
+		};
+		47D1AEB4C0DD2349F4D2D6B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sail.NightSensorsTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NightSensors.app/NightSensors";
+			};
+			name = Release;
+		};
+		4B3DB7363548292D9A73D088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		7CF4FEB9768A13C8B7E031D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = NO;
+				INFOPLIST_FILE = NightSensors/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sail.NightSensors;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		831312BA12DD919DA3F9387D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = NO;
+				INFOPLIST_FILE = NightSensors/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sail.NightSensors;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B9B23513D33979B7AE7A5997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49F815C8A8D865EE2A9FED81 /* Build configuration list for PBXNativeTarget "NightSensorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2309A7F2D5657C92A7DF9E0A /* Debug */,
+				47D1AEB4C0DD2349F4D2D6B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A3C7F897BA2DA0AB047A8162 /* Build configuration list for PBXNativeTarget "NightSensors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF4FEB9768A13C8B7E031D4 /* Debug */,
+				831312BA12DD919DA3F9387D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B97FB3E1E8E849427EC35A10 /* Build configuration list for PBXProject "NightSensors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3DB7363548292D9A73D088 /* Debug */,
+				B9B23513D33979B7AE7A5997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6D692E5F337468F8BA2C7A0 /* Project object */;
+}

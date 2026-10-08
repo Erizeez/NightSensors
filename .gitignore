@@ -1,0 +1,30 @@
+# Xcode & Apple Build Artifacts
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdatad
+xcuserdata/
+project.xcworkspace/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcscmblueprint
+
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Swift Package Manager & Temporary Files
+.build/
+Packages/
+*.swp
+*~
+
+# Local environment & scratch
+scratch/
+.system_generated/
